@@ -22,12 +22,7 @@ window.addEventListener('load', () => {
 // animation timeline
 const animationTimeline = () => {
     // split chars that needs to be animated individually
-    const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
-
-    textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-        .split("")
-        .join("</span><span>")}</span>`;
 
     hbd.innerHTML = `<span>${hbd.innerHTML
         .split("")
@@ -57,7 +52,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
     })
-    .from(".two", 0.4, {
+    .from(".two", 0.6, {
         opacity: 0,
         y: 10
     })
@@ -90,21 +85,6 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0,
     })
-    .from(".fake-btn", 0.3, {
-        scale: 0.2,
-        opacity: 0,
-    })
-    .staggerTo(
-        ".hbd-chatbox span",
-        1.5, {
-            visibility: "visible",
-        },
-        0.05
-    )
-    .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
-    },
-    "+=4")
     .to(
         ".four",
         0.5, {
@@ -155,8 +135,8 @@ const animationTimeline = () => {
         },
         "+=2"
     )
-    .staggerFrom(
-        ".idea-6 span",
+    .from(
+        ".idea-6",
         0.8, {
             scale: 3,
             opacity: 0,
@@ -165,8 +145,8 @@ const animationTimeline = () => {
         },
         0.2
     )
-    .staggerTo(
-        ".idea-6 span",
+    .to(
+        ".idea-6",
         0.8, {
             scale: 3,
             opacity: 0,
@@ -176,6 +156,17 @@ const animationTimeline = () => {
         0.2,
         "+=1.5"
     )
+    .from(".idea-7", 0.7, {
+        opacity: 0,
+        y: 10
+    })
+    .to(".idea-7",
+        0.7,
+        {
+            opacity: 0,
+            y: 10
+        },
+    "+=3")
     .staggerFromTo(
         ".baloons img",
         2.5, {
@@ -269,4 +260,24 @@ const animationTimeline = () => {
     replyBtn.addEventListener("click", () => {
         tl.restart();
     });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") { 
+            console.log("stopped")
+            tl.pause(); // Stoppt die Animation
+        }
+        if (event.key === "a") { 
+            console.log("started")
+            tl.resume(); // Stoppt die Animation
+        }
+        if (event.key === "ArrowRight") { 
+            console.log("Vor")
+            tl.seek(tl.time() + 2); // Stoppt die Animation
+        }
+        if (event.key === "ArrowLeft") { 
+            console.log("Zurück")
+            tl.seek(tl.time() - 2); // Stoppt die Animation
+        }
+    });
+
 }

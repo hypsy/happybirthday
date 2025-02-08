@@ -41,13 +41,8 @@ body {
   font-size: 3rem;
 }
 
-.four .text-box {
-  border: 3px solid #aaa;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
-  width: 600px;
+.four {
+  font-size: 3rem;
 }
 
 .text-box p {
@@ -92,6 +87,10 @@ body {
 
 .idea-6 span{
   font-size: 15rem;
+}
+
+.fiveandhalf {
+  font-size: 3rem;
 }
 
 
@@ -223,6 +222,13 @@ body {
 #replay {
   cursor: pointer;
   z-index: 3;
+}
+
+img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+  /* height: auto; */
 }
 
 /* Media Queries */
