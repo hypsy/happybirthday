@@ -29,56 +29,31 @@ body {
 }
 
 .one {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
 }
 
 .two {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
 .three {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .four {
-  font-size: 3rem;
-}
-
-.text-box p {
-  margin: 0;
-  text-align: left;
-}
-
-.text-box span {
-  visibility: hidden;
-}
-
-.text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
-  border-radius: 3px;
-  bottom: -50px;
-  color: #fff;
-  padding: .5rem 1rem;
-  position: absolute;
-  right: 5px;
+  font-size: 1.5rem;
 }
 
 .five p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   left: 0;
   position: absolute;
   right: 0;
 }
 
-.idea-3 strong {
-  border-radius: 3px;
-  display: inline-block;
-  padding: 3px 5px;
-}
-
 .five .idea-5 {
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
@@ -86,11 +61,11 @@ body {
 }
 
 .idea-6 span{
-  font-size: 15rem;
+  font-size: 1.5rem;
 }
 
 .fiveandhalf {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 
@@ -203,19 +178,19 @@ body {
 }
 
 .wish-hbd {
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0;
   text-transform: uppercase;
 }
 
 .wish h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   margin: 10px 0 0;
 }
 
 .nine p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
